@@ -1,0 +1,64 @@
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'); */
+
+:root {
+  --mainColor: #fb8016;
+  --inverseColor: white;
+  --mainBodyColor: rgb(110, 110, 110);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body{
+  color: var(--mainBodyColor);
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  color: var(--mainColor);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 250px;
+  border-bottom: 1px solid rgb(223, 217, 217);
+}
+
+header h3 {
+  color: var(--mainColor);
+  font-size: 32px;
+}
+
+header div:last-of-type a {
+  padding: 0 10px;
+}
+
+.main-btn{
+  background-color: var(--mainColor);
+  color: white;
+  border-radius: 5px;
+  padding:10px 30px;
+  border: none;
+  font-weight: bold;
+
+}
+.main-btn.main-btn-inverse{
+  background-color: var(--inverseColor);
+  color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+}
+
+.pet-list{
+  padding: 50px 250px;
+}
+
+.main-title{
+  display: flex;
+  justify-content: space-between;
+}
